@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+    <link rel="stylesheet" href="../home.css">
+    <script src="../home.js"></script>
+</head>
+<body class="hero-section">
+    <h1>Изберете локация</h1>
+
+    <div class="rectangular-button-container">
+        <a href="st_nevski.php">
+            <div class="rectangular-button" style="background-image: url('../images/location_1.jpg');"></div>
+        </a>
+        <a href="stadium.php">
+            <div class="rectangular-button" style="background-image: url('../images/location_2.jpg');"></div>
+        </a>
+    </div>
+    <div class="container2">
+        <button class="toggle-btn" onclick='window.location.assign("../home.html")' id="log_button">НАЗАД</button>
+    </div>
+
+    <script>
+        function handleButtonClick(photo) {
+            alert("You clicked on " + photo);
+        }
+    </script>
+</body>
+</html>
